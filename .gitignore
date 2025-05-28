@@ -1,3 +1,37 @@
 __pycache__
 output.*
 sample_*
+cat > .gitignore << 'EOF'
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+.env
+
+# Cog
+.cog/
+
+# Sample outputs (optional - you might want to keep these)
+sample_*
+
+# UV
+.uv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Docker
+docker-compose.override.yml
+EOF

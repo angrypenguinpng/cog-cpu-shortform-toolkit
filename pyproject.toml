@@ -1,0 +1,18 @@
+[project]
+name = "cog-cpu-shortform-toolkit"
+version = "0.1.0"
+description = "TikTok video processing with ffmpeg"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "cog>=0.9.0",
+    "requests>=2.31.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
+only-include = ["predict.py", "cog.yaml"]

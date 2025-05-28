@@ -3,4 +3,5 @@ build:
   system_packages:
     - "ffmpeg"
   python_version: "3.11"
-predict: "predict.py:Predictor"
+  python_requirements: "requirements.txt"  # Changed from python_packages
+predict: "predict.py:Predictor"  # Added missing closing quote
